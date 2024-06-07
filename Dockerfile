@@ -26,6 +26,8 @@ RUN ./ADFRsuite_Linux-x86_64_1.0_install
 RUN wget https://github.com/ccsb-scripps/AutoDock-Vina/releases/download/v1.2.3/vina_1.2.3_linux_x86_64
 
 
+
+
 # Set the entrypoint to execute the script
 ENTRYPOINT ["/flask_server/entrypoint_new.sh", "/bin/bash"]
 
