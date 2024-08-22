@@ -1,7 +1,8 @@
 
 # WebServerDocker: A Lightweight GPU-Powered Docker Container
 ```markdown
-This project provides a streamlined, GPU-enabled Docker container designed as a more efficient alternative to larger Kaggle images. We leverage the official TensorFlow Docker image ([https://www.tensorflow.org/install/docker](https://www.tensorflow.org/install/docker)) and build upon it with a custom Dockerfile, allowing for modifications during the build process.
+This project provides a streamlined, GPU-enabled Docker container designed as a more efficient alternative to larger Kaggle images.
+We leverage the official TensorFlow Docker image ([https://www.tensorflow.org/install/docker](https://www.tensorflow.org/install/docker)) and build upon it with a custom Dockerfile, allowing for modifications during the build process.
 
 ## Key Features
 
@@ -12,7 +13,8 @@ This project provides a streamlined, GPU-enabled Docker container designed as a 
 
 ## How It Works
 
-This project uses a Dockerfile to build a customized image based on the official TensorFlow image. This Dockerfile includes an entrypoint script (`entrypoint.sh`) that is executed when the container starts. This allows you to automatically run your desired application or script within the container.
+This project uses a Dockerfile to build a customized image based on the official TensorFlow image.
+This Dockerfile includes an entry point that is executed when the container starts. This allows you to automatically run your desired application or script within the container.
 
 ## Building the Docker Image
 
