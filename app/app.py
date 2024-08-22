@@ -7,4 +7,4 @@ def hello():
     return "Demo Flask & Docker application is up and running!"
 
 if __name__ == '__main__':
-    app.run(debug=True,host="0.0.0.0", port=8080)
+    app.run(debug=True,host="0.0.0.0", port=7005)
