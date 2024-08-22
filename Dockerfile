@@ -11,13 +11,6 @@ WORKDIR /flask_server
 COPY /app .
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-
-# Copy the entrypoint script and Python script into the image
-COPY entrypoint_new.sh .
-# Set the entrypoint script as executable
-RUN chmod +x entrypoint_new.sh
-
-
+EXPOSE 7005
 # Set the entrypoint to execute the script
-ENTRYPOINT ["/flask_server/entrypoint_new.sh", "/bin/bash"]
-
+ENTRYPOINT ["python", "app.py"]
