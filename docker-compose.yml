@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  flask_server:
+    build: .
+    runtime: nvidia
+    ports:
+      - "7005:7005"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - FLASK_ENV=development
+    container_name: my_flask_container
+    healthcheck:
+      test: ["CMD", "nvidia-smi"]
+      interval: 12h
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    # volumes:
+    #   - ./data:/app/data # volume mounting
+
+#run with docker compose up --build
