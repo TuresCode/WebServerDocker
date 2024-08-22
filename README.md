@@ -45,4 +45,3 @@ This command does the following:
 2. Modify the Dockerfile and entrypoint.sh to suit your specific needs.
 3. Build the Docker image using the provided command.
 4. Run the container and access your application!
-```
